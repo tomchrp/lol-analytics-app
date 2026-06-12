@@ -11,6 +11,11 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 2s
+      timeout: 2s
+      retries: 10
 
   redis:
     image: redis:7-alpine
@@ -23,8 +28,10 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - db
-      - redis
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
     environment:
       - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       - REDIS_URL=redis://redis:6379
@@ -34,12 +41,23 @@ services:
     build: .
     command: arq worker.worker_settings.WorkerSettings
     depends_on:
-      - db
-      - redis
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
     environment:
       - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       - REDIS_URL=redis://redis:6379
       - RIOT_API_KEY=${RIOT_API_KEY}
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      db:
+        condition: service_healthy
+        
 volumes:
   postgres_data:
