@@ -1,0 +1,1154 @@
+{
+    "PAUSE_END": {
+        "keys_profile": {
+            "realTimestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 1778675850139,
+                "max": 1781300275194
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 0
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "PAUSE_END"
+                ]
+            }
+        }
+    },
+    "ITEM_PURCHASED": {
+        "keys_profile": {
+            "itemId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1001,
+                "max": 8020
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 2718645
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ITEM_PURCHASED"
+                ]
+            }
+        }
+    },
+    "SKILL_LEVEL_UP": {
+        "keys_profile": {
+            "levelUpType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "EVOLVE",
+                    "NORMAL"
+                ]
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "skillSlot": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 4
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 2778469
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "SKILL_LEVEL_UP"
+                ]
+            }
+        }
+    },
+    "WARD_PLACED": {
+        "keys_profile": {
+            "creatorId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 2792425
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "WARD_PLACED"
+                ]
+            },
+            "wardType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BLUE_TRINKET",
+                    "CONTROL_WARD",
+                    "SIGHT_WARD",
+                    "TEEMO_MUSHROOM",
+                    "UNDEFINED",
+                    "YELLOW_TRINKET"
+                ]
+            }
+        }
+    },
+    "ITEM_DESTROYED": {
+        "keys_profile": {
+            "itemId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1001,
+                "max": 6690
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 8995,
+                "max": 2770614
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ITEM_DESTROYED"
+                ]
+            }
+        }
+    },
+    "ITEM_UNDO": {
+        "keys_profile": {
+            "afterId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 3916
+            },
+            "beforeId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 6697
+            },
+            "goldGain": {
+                "types": [
+                    "int"
+                ],
+                "min": -1820,
+                "max": 2625
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 4588,
+                "max": 2788484
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ITEM_UNDO"
+                ]
+            }
+        }
+    },
+    "LEVEL_UP": {
+        "keys_profile": {
+            "level": {
+                "types": [
+                    "int"
+                ],
+                "min": 2,
+                "max": 20
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 68698,
+                "max": 2774154
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "LEVEL_UP"
+                ]
+            }
+        }
+    },
+    "CHAMPION_KILL": {
+        "keys_profile": {
+            "bounty": {
+                "types": [
+                    "int"
+                ],
+                "min": 99,
+                "max": 420
+            },
+            "killStreakLength": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 15
+            },
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "position": {
+                "x": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 635,
+                    "max": 14302
+                },
+                "y": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 566,
+                    "max": 14234
+                }
+            },
+            "shutdownBounty": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 700
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 41625,
+                "max": 2779407
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "CHAMPION_KILL"
+                ]
+            },
+            "victimDamageDealt": {
+                "types": [
+                    "list"
+                ],
+                "item_schema": {
+                    "basic": {
+                        "types": [
+                            "bool"
+                        ]
+                    },
+                    "magicDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "name": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "DrMundo"
+                        ]
+                    },
+                    "participantId": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 6,
+                        "max": 6
+                    },
+                    "physicalDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 45,
+                        "max": 45
+                    },
+                    "spellName": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "drmundobasicattack2"
+                        ]
+                    },
+                    "spellSlot": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 65,
+                        "max": 65
+                    },
+                    "trueDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "type": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "OTHER"
+                        ]
+                    }
+                }
+            },
+            "victimDamageReceived": {
+                "types": [
+                    "list"
+                ],
+                "item_schema": {
+                    "basic": {
+                        "types": [
+                            "bool"
+                        ]
+                    },
+                    "magicDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "name": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "SRU_ChaosMinionRanged"
+                        ]
+                    },
+                    "participantId": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "physicalDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 4,
+                        "max": 4
+                    },
+                    "spellName": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "sru_chaosminionmeleebasicattack"
+                        ]
+                    },
+                    "spellSlot": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 64,
+                        "max": 64
+                    },
+                    "trueDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "type": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "MINION"
+                        ]
+                    }
+                }
+            },
+            "victimId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "victimTeamfightDamageDealt": {
+                "types": [
+                    "list"
+                ],
+                "item_schema": {
+                    "basic": {
+                        "types": [
+                            "bool"
+                        ]
+                    },
+                    "magicDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "name": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "DrMundo"
+                        ]
+                    },
+                    "participantId": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 6,
+                        "max": 6
+                    },
+                    "physicalDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 45,
+                        "max": 45
+                    },
+                    "spellName": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "drmundobasicattack2"
+                        ]
+                    },
+                    "spellSlot": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 65,
+                        "max": 65
+                    },
+                    "trueDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "type": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "OTHER"
+                        ]
+                    }
+                }
+            },
+            "victimTeamfightDamageReceived": {
+                "types": [
+                    "list"
+                ],
+                "item_schema": {
+                    "basic": {
+                        "types": [
+                            "bool"
+                        ]
+                    },
+                    "magicDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "name": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "SRU_ChaosMinionRanged"
+                        ]
+                    },
+                    "participantId": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "physicalDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 4,
+                        "max": 4
+                    },
+                    "spellName": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "sru_chaosminionmeleebasicattack"
+                        ]
+                    },
+                    "spellSlot": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 64,
+                        "max": 64
+                    },
+                    "trueDamage": {
+                        "types": [
+                            "int"
+                        ],
+                        "min": 0,
+                        "max": 0
+                    },
+                    "type": {
+                        "types": [
+                            "str"
+                        ],
+                        "enumerations": [
+                            "MINION"
+                        ]
+                    }
+                }
+            },
+            "assistingParticipantIds": {
+                "types": [
+                    "list"
+                ]
+            }
+        }
+    },
+    "CHAMPION_SPECIAL_KILL": {
+        "keys_profile": {
+            "killType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "KILL_ACE",
+                    "KILL_FIRST_BLOOD",
+                    "KILL_MULTI"
+                ]
+            },
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "position": {
+                "x": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 755,
+                    "max": 14052
+                },
+                "y": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 860,
+                    "max": 13851
+                }
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 41625,
+                "max": 2674049
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "CHAMPION_SPECIAL_KILL"
+                ]
+            },
+            "multiKillLength": {
+                "types": [
+                    "int"
+                ],
+                "min": 2,
+                "max": 4
+            }
+        }
+    },
+    "TURRET_PLATE_DESTROYED": {
+        "keys_profile": {
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "laneType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BOT_LANE",
+                    "MID_LANE",
+                    "TOP_LANE"
+                ]
+            },
+            "position": {
+                "x": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 981,
+                    "max": 13866
+                },
+                "y": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 1029,
+                    "max": 13875
+                }
+            },
+            "teamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 200
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 136478,
+                "max": 2708410
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "TURRET_PLATE_DESTROYED"
+                ]
+            }
+        }
+    },
+    "WARD_KILL": {
+        "keys_profile": {
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 35711,
+                "max": 2768610
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "WARD_KILL"
+                ]
+            },
+            "wardType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BLUE_TRINKET",
+                    "CONTROL_WARD",
+                    "SIGHT_WARD",
+                    "TEEMO_MUSHROOM",
+                    "UNDEFINED",
+                    "YELLOW_TRINKET"
+                ]
+            }
+        }
+    },
+    "ELITE_MONSTER_KILL": {
+        "keys_profile": {
+            "bounty": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 0
+            },
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "killerTeamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 300
+            },
+            "monsterType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BARON_NASHOR",
+                    "DRAGON",
+                    "HORDE",
+                    "RIFTHERALD"
+                ]
+            },
+            "position": {
+                "x": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 4284,
+                    "max": 10434
+                },
+                "y": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 4397,
+                    "max": 10638
+                }
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 345293,
+                "max": 2774154
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ELITE_MONSTER_KILL"
+                ]
+            },
+            "monsterSubType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "AIR_DRAGON",
+                    "CHEMTECH_DRAGON",
+                    "EARTH_DRAGON",
+                    "ELDER_DRAGON",
+                    "FIRE_DRAGON",
+                    "HEXTECH_DRAGON",
+                    "WATER_DRAGON"
+                ]
+            },
+            "assistingParticipantIds": {
+                "types": [
+                    "list"
+                ]
+            }
+        }
+    },
+    "ITEM_SOLD": {
+        "keys_profile": {
+            "itemId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1001,
+                "max": 6699
+            },
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 1,
+                "max": 10
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 130614,
+                "max": 2787733
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ITEM_SOLD"
+                ]
+            }
+        }
+    },
+    "BUILDING_KILL": {
+        "keys_profile": {
+            "bounty": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 800
+            },
+            "buildingType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "INHIBITOR_BUILDING",
+                    "TOWER_BUILDING"
+                ]
+            },
+            "killerId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 10
+            },
+            "laneType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BOT_LANE",
+                    "MID_LANE",
+                    "TOP_LANE"
+                ]
+            },
+            "position": {
+                "x": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 981,
+                    "max": 13866
+                },
+                "y": {
+                    "types": [
+                        "int"
+                    ],
+                    "min": 1029,
+                    "max": 13875
+                }
+            },
+            "teamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 200
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 635842,
+                "max": 2785963
+            },
+            "towerType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BASE_TURRET",
+                    "INNER_TURRET",
+                    "NEXUS_TURRET",
+                    "OUTER_TURRET"
+                ]
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "BUILDING_KILL"
+                ]
+            },
+            "assistingParticipantIds": {
+                "types": [
+                    "list"
+                ]
+            }
+        }
+    },
+    "DRAGON_SOUL_GIVEN": {
+        "keys_profile": {
+            "name": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "Chemtech",
+                    "Cloud",
+                    "Hextech",
+                    "Infernal",
+                    "Mountain",
+                    "Ocean"
+                ]
+            },
+            "teamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 0,
+                "max": 200
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 694643,
+                "max": 2774655
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "DRAGON_SOUL_GIVEN"
+                ]
+            }
+        }
+    },
+    "OBJECTIVE_BOUNTY_PRESTART": {
+        "keys_profile": {
+            "actualStartTime": {
+                "types": [
+                    "int"
+                ],
+                "min": 860000,
+                "max": 2095000
+            },
+            "teamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 200
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 845318,
+                "max": 2080378
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "OBJECTIVE_BOUNTY_PRESTART"
+                ]
+            }
+        }
+    },
+    "OBJECTIVE_BOUNTY_FINISH": {
+        "keys_profile": {
+            "teamId": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 200
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 945403,
+                "max": 1825318
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "OBJECTIVE_BOUNTY_FINISH"
+                ]
+            }
+        }
+    },
+    "GAME_END": {
+        "keys_profile": {
+            "gameId": {
+                "types": [
+                    "int"
+                ],
+                "min": 7852007816,
+                "max": 7885381361
+            },
+            "realTimestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 1778677925479,
+                "max": 1781301250216
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 69851,
+                "max": 2799881
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "GAME_END"
+                ]
+            },
+            "winningTeam": {
+                "types": [
+                    "int"
+                ],
+                "min": 100,
+                "max": 200
+            }
+        }
+    },
+    "CHAMPION_TRANSFORM": {
+        "keys_profile": {
+            "participantId": {
+                "types": [
+                    "int"
+                ],
+                "min": 7,
+                "max": 7
+            },
+            "timestamp": {
+                "types": [
+                    "int"
+                ],
+                "min": 717729,
+                "max": 925114
+            },
+            "transformType": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "ASSASSIN",
+                    "SLAYER"
+                ]
+            },
+            "type": {
+                "types": [
+                    "str"
+                ],
+                "enumerations": [
+                    "CHAMPION_TRANSFORM"
+                ]
+            }
+        }
+    }
+}

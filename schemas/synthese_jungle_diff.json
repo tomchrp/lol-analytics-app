@@ -1,0 +1,98 @@
+{
+    "ELITE_MONSTER_KILL": {
+        "all_detected_keys": [
+            "assistingParticipantIds",
+            "bounty",
+            "killerId",
+            "killerTeamId",
+            "monsterSubType",
+            "monsterType",
+            "position",
+            "timestamp",
+            "type"
+        ],
+        "enumerations": {
+            "monsterType": [
+                "BARON_NASHOR",
+                "DRAGON",
+                "HORDE",
+                "RIFTHERALD"
+            ],
+            "monsterSubType": [
+                "AIR_DRAGON",
+                "CHEMTECH_DRAGON",
+                "EARTH_DRAGON",
+                "ELDER_DRAGON",
+                "FIRE_DRAGON",
+                "HEXTECH_DRAGON",
+                "WATER_DRAGON"
+            ]
+        }
+    },
+    "BUILDING_KILL": {
+        "all_detected_keys": [
+            "assistingParticipantIds",
+            "bounty",
+            "buildingType",
+            "killerId",
+            "laneType",
+            "position",
+            "teamId",
+            "timestamp",
+            "towerType",
+            "type"
+        ],
+        "enumerations": {
+            "laneType": [
+                "BOT_LANE",
+                "MID_LANE",
+                "TOP_LANE"
+            ],
+            "towerType": [
+                "BASE_TURRET",
+                "INNER_TURRET",
+                "NEXUS_TURRET",
+                "OUTER_TURRET"
+            ],
+            "buildingType": [
+                "INHIBITOR_BUILDING",
+                "TOWER_BUILDING"
+            ]
+        }
+    },
+    "CHAMPION_KILL": {
+        "all_detected_keys": [
+            "assistingParticipantIds",
+            "bounty",
+            "killStreakLength",
+            "killerId",
+            "position",
+            "shutdownBounty",
+            "timestamp",
+            "type",
+            "victimDamageDealt",
+            "victimDamageReceived",
+            "victimId",
+            "victimTeamfightDamageDealt",
+            "victimTeamfightDamageReceived"
+        ],
+        "enumerations": {}
+    },
+    "CHAMPION_SPECIAL_KILL": {
+        "all_detected_keys": [
+            "killType",
+            "killerId",
+            "multiKillLength",
+            "position",
+            "timestamp",
+            "type"
+        ],
+        "enumerations": {
+            "killType": [
+                "KILL_ACE",
+                "KILL_FIRST_BLOOD",
+                "KILL_MULTI"
+            ]
+        }
+    }
+}

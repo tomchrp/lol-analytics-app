@@ -36,6 +36,8 @@ services:
       - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       - REDIS_URL=redis://redis:6379
       - RIOT_API_KEY=${RIOT_API_KEY}
+    volumes:
+      - .:/app  # <-- AJOUT : Synchronise ton dossier local avec le conteneur
 
   worker:
     build: .
@@ -49,6 +51,8 @@ services:
       - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       - REDIS_URL=redis://redis:6379
       - RIOT_API_KEY=${RIOT_API_KEY}
+    volumes:
+      - .:/app  # <-- AJOUT : Permet au script d'ecrire sur ton disque Windows
 
   adminer:
     image: adminer
